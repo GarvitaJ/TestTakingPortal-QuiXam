@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: fceae0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Leaderboard">
+   <children>
+      <JFXListView fx:id="scorelist" layoutX="144.0" layoutY="106.0" prefHeight="273.0" prefWidth="313.0" style="-fx-background-color: fceae0;" />
+      <Label layoutX="221.0" layoutY="21.0" text="LeaderBoard" textFill="#913131">
+         <font>
+            <Font name="Baskerville Old Face" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="79.0" text="USN" textFill="#801e1e">
+         <font>
+            <Font name="Baskerville Old Face" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="344.0" layoutY="79.0" text="SCORE" textFill="#801e1e">
+         <font>
+            <Font name="Baskerville Old Face" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="back" buttonType="RAISED" layoutX="33.0" layoutY="347.0" onAction="#back" style="-fx-background-color: dfa490;" text="Back" textFill="#28367b">
+         <font>
+            <Font name="Bookman Old Style Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="22.0" layoutY="14.0" onAction="#Logout" text="Log out" textFill="#4059a9" underline="true">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

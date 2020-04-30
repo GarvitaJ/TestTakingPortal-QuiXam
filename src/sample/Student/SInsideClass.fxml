@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: fceae0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Student.SInsideClass">
+   <children>
+      <JFXListView fx:id="quizList" layoutX="362.0" layoutY="66.0" prefHeight="308.0" prefWidth="200.0" style="-fx-background-color: white;" />
+      <JFXButton fx:id="back" buttonType="RAISED" layoutX="22.0" layoutY="361.0" onAction="#back" style="-fx-background-color: dfa290;" text="Back" textFill="#28367b">
+         <font>
+            <Font name="Bookman Old Style Bold" size="14.0" />
+         </font></JFXButton>
+      <JFXListView fx:id="quizList2" layoutX="126.0" layoutY="66.0" prefHeight="308.0" prefWidth="200.0" style="-fx-background-color: white;" />
+      <Label layoutX="163.0" layoutY="30.0" text="New Quizzes" textFill="#913131">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="22.0" layoutY="14.0" onAction="#Logout" text="Log out" textFill="#4059a9" underline="true">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="390.0" layoutY="30.0" text="Quizzes Taken" textFill="#913131">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

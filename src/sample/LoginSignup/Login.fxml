@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: fceae0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginSignup.Login">
+   <children>
+      <JFXTextField fx:id="password2" layoutX="207.0" layoutY="189.0" opacity="0.0" prefHeight="43.0" prefWidth="187.0" promptText="Password">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="245.0" layoutY="311.0" prefHeight="31.0" prefWidth="111.0" text="New User?" textFill="#913131">
+         <font>
+            <Font name="Baskerville Old Face" size="23.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="typeteacher" layoutX="190.0" layoutY="124.0" prefHeight="28.0" prefWidth="111.0" text="Teacher" textFill="#913131">
+         <toggleGroup>
+            <ToggleGroup fx:id="type" />
+         </toggleGroup>
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="typestudent" layoutX="306.0" layoutY="128.0" text="Student" textFill="#913131" toggleGroup="$type">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font></JFXRadioButton>
+      <JFXTextField fx:id="userid" layoutX="207.0" layoutY="145.0" prefHeight="43.0" prefWidth="187.0" promptText="Id">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="password" layoutX="207.0" layoutY="189.0" prefHeight="43.0" prefWidth="187.0" promptText="Password">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXCheckBox fx:id="passwordcheck" checkedColor="#4059a9" layoutX="207.0" layoutY="239.0" onAction="#showpass" text="Show Password">
+         <font>
+            <Font name="Bookman Old Style" size="12.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXButton fx:id="Confirm" buttonType="RAISED" layoutX="364.0" layoutY="280.0" onAction="#Login" ripplerFill="#be9696" style="-fx-background-color: DFA290;" text="LOG IN" textAlignment="CENTER" textFill="#28367b">
+         <font>
+            <Font name="Bookman Old Style Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="signupstud" layoutX="107.0" layoutY="342.0" onMouseClicked="#SignUpStud" ripplerFill="#29282e" text="Signup as Student" textFill="#4059a9" underline="true">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="12.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="signupteach" layoutX="350.0" layoutY="342.0" onMouseClicked="#SignUpTeach" text="Signup as Teacher" textFill="#4050a9" underline="true">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="12.0" />
+         </font></JFXButton>
+      <Label fx:id="invid" layoutX="223.0" layoutY="257.0" opacity="0.0" prefHeight="17.0" prefWidth="171.0" text="Invalid username or password" textFill="RED" />
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="24.0" prefHeight="68.0" prefWidth="604.0" style="-fx-background-color: white;" text="QuiXam" textFill="#4059a9fa">
+         <font>
+            <Font name="Book Antiqua" size="33.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: fceae0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Teacher.TInsideClass">
+   <children>
+      <JFXTextField fx:id="Quizname" layoutX="59.0" layoutY="123.0" prefHeight="29.0" prefWidth="165.0" promptText="Quizname" />
+      <JFXTextField fx:id="Totalqns" layoutX="59.0" layoutY="163.0" prefHeight="29.0" prefWidth="165.0" promptText="Total No. Of Questions " />
+      <JFXTextField fx:id="QuizQns" layoutX="59.0" layoutY="200.0" prefHeight="29.0" prefWidth="165.0" promptText="No. Of Questions for each test" />
+      <JFXButton fx:id="ok" buttonType="RAISED" layoutX="211.0" layoutY="249.0" onAction="#createquiz" prefHeight="26.0" prefWidth="56.0" style="-fx-background-color: DFA290;" text="OK" textFill="#28367b">
+         <font>
+            <Font name="Bookman Old Style Bold" size="14.0" />
+         </font>
+      </JFXButton>
+       <JFXButton fx:id="back" buttonType="RAISED" layoutX="38.0" layoutY="346.0" onAction="#back" style="-fx-background-color: #DFA290;" text="Back" textFill="#28367b">
+         <font>
+            <Font name="Bookman Old Style Bold" size="14.0" />
+         </font></JFXButton>
+      <Label layoutX="54.0" layoutY="66.0" prefHeight="44.0" prefWidth="208.0" text="Create New Quiz" textFill="#913131">
+         <font>
+            <Font name="Baskerville Old Face" size="25.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="22.0" layoutY="14.0" onAction="#Logout" text="Log out" textFill="#4050a9" underline="true">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXListView fx:id="QuizList" layoutX="369.0" layoutY="21.0" prefHeight="358.0" prefWidth="200.0" style="-fx-background-color: WHITE;" />
+   </children>
+</AnchorPane>

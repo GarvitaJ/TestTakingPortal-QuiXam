@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FCEAE0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Teacher.TeacherDashboard">
+   <children>
+      <JFXTextField fx:id="Sem" focusColor="BLACK" layoutX="76.0" layoutY="132.0" promptText="Semester" />
+      <JFXTextField fx:id="Sec" layoutX="76.0" layoutY="166.0" promptText="Section" />
+      <JFXTextField fx:id="Sub" layoutX="76.0" layoutY="201.0" promptText="Subject" />
+      <JFXButton fx:id="Ok" buttonType="RAISED" layoutX="192.0" layoutY="253.0" onAction="#create" prefHeight="30.0" prefWidth="46.0" style="-fx-background-color: DFA290;" text="OK" textFill="#28367b">
+         <font>
+            <Font name="Bookman Old Style Bold" size="14.0" />
+         </font>
+      </JFXButton>
+       <JFXButton fx:id="back" buttonType="RAISED" layoutX="48.0" layoutY="350.0" onAction="#back" style="-fx-background-color: DFA290;" text="Back" textFill="#28367b">
+         <font>
+            <Font name="Bookman Old Style Bold" size="14.0" />
+         </font></JFXButton>
+      <JFXListView fx:id="classList" editable="true" focusTraversable="false" layoutX="368.0" layoutY="1.0" prefHeight="400.0" prefWidth="202.0" style="-fx-background-color: WHITE;" />
+      <Label layoutX="60.0" layoutY="79.0" text="Create New Class" textFill="#913131">
+         <font>
+            <Font name="Baskerville Old Face" size="27.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="22.0" layoutY="14.0" text="Log out" textFill="#4059a9" underline="true">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

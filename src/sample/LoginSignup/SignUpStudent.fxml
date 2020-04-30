@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: fceae0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginSignup.SignUpStudent">
+   <children>
+      <JFXTextField fx:id="sname" layoutX="222.0" layoutY="84.0" promptText="Name" />
+      <JFXTextField fx:id="usn" layoutX="222.0" layoutY="118.0" promptText="USN" />
+      <JFXTextField fx:id="sem" layoutX="222.0" layoutY="153.0" promptText="Semester" />
+      <JFXTextField fx:id="sec" layoutX="222.0" layoutY="188.0" promptText="Section" />
+      <JFXTextField fx:id="semail" layoutX="222.0" layoutY="224.0" promptText="Email" />
+      <JFXTextField fx:id="spassword" layoutX="222.0" layoutY="259.0" promptText="Password" />
+      <JFXTextField fx:id="sconfirmpass" layoutX="222.0" layoutY="294.0" promptText="Confirm Password" />
+      <JFXButton fx:id="sconfirm" buttonType="RAISED" layoutX="379.0" layoutY="339.0" onAction="#SSignUp" ripplerFill="#393434" style="-fx-background-color: dfa490;" text="Signup" textFill="#28367b">
+         <font>
+            <Font name="Bookman Old Style Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="back" buttonType="RAISED" layoutX="141.0" layoutY="339.0" onAction="#back" style="-fx-background-color: dfa490;" text="Back" textFill="#28367b">
+         <font>
+            <Font name="Bookman Old Style Bold" size="14.0" />
+         </font></JFXButton>
+      <Label layoutX="174.0" layoutY="36.0" text="Signup as a Student" textFill="#913131">
+         <font>
+            <Font name="Baskerville Old Face" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
